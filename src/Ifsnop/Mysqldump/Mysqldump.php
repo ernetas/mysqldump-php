@@ -164,6 +164,8 @@ class Mysqldump
 
         $pdoSettingsDefault = array(
             PDO::ATTR_PERSISTENT => true,
+            PDO::MYSQL_ATTR_SSL_CA => '/etc/ssl/certs/rds.pem',
+            PDO::ATTR_SSL_CA => '/etc/ssl/certs/rds.pem',
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         );
 
